@@ -5,7 +5,6 @@ import threading
 
 def connected():
     def receive_messages(sock):
-        """Функция только для приема сообщений"""
         while True:
             try:
                 data = sock.recv(1024)
